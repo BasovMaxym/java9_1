@@ -4,18 +4,29 @@ import employees.Employee;
 
 import manager.Manager;
 
+import java.util.Scanner;
+
 public class Main
 {
 
     public static void main(String[] args)
     {
 
+        Scanner in = new Scanner(System.in);
 
-        Employee first = new Employee(1,"M",100);
+        System.out.println("Введіть ім'я першого працівника: ");
+
+        String name = new String(in.nextLine());
+
+        Employee first = new Employee(1, name ,100);
 
         Employee second = new Employee(2, "Bohdan",300);
 
-        Employee third = new Employee(3, "Misha",-100);
+        System.out.println("Введіть зарплату для третього працівника: ");
+
+        double salary = in.nextDouble();
+
+        Employee third = new Employee(3, "Misha", salary);
 
         Employee fourth = new Employee(4,"Yura",60);
 

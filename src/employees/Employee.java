@@ -37,6 +37,7 @@ public class Employee
                 throw new IncorrectSalaryException("Зарплата не може бути від'ємною!");
 
             }
+
             this.salary = salary;
 
         }
